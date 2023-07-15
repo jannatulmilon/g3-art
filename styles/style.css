@@ -3,3 +3,16 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
+/* header styles */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav > ul{
+    display: flex;
+    list-style: none;
+}
+ul li{
+    margin-left: 20px;
+}
