@@ -56,8 +56,8 @@ nav li a {
 }
 /* main section starts */
 main {
-  width: 1440px;
-  margin: 0 auto;
+  max-width: 1440px;
+  margin: 50px auto;
 }
 .team-container {
   display: flex;
@@ -69,12 +69,12 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  padding: 30px 60px;
+  
 }
 
 .team-content {
-  padding-left: 20px;
-  padding-right: 100px;
+  padding-left: 50px;
+  padding-right: 70px;
 }
 .team-title {
   font-family: Work Sans;
@@ -99,7 +99,7 @@ main {
   header {
     padding: 20px;
   }
-  .nav {
+  .nav, .team-container {
     flex-direction: column;
   }
   nav > ul {
@@ -108,12 +108,21 @@ main {
   nav ul li {
     font-size: 12px;
   }
+  .team-content{
+    padding: 10px 10px;
+  }
+  .team-img-container{
+    grid-template-columns: 1fr;
+    margin-top: 5px;
+  }
 }
+/* tablet */
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 50px;
   }
-  .nav {
+  .nav,
+   .team-container {
     flex-direction: column;
   }
   nav > ul {
