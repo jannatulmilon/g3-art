@@ -22,23 +22,19 @@ header {
 }
 .nav > ul {
   display: flex;
-  
-  
 }
 nav ul li {
   margin-left: 10px;
   font-size: 1rem;
   list-style: none;
-
 }
 nav li a {
   text-decoration: none;
   color: darkslategrey;
 }
-.nav-title{
+.nav-title {
   color: rgb(50, 47, 47);
   font-size: 2rem;
-  
 }
 
 /* banner style */
@@ -52,24 +48,35 @@ nav li a {
   width: 100%;
   margin-top: 20px;
 }
-.banner-title{
+.banner-title {
   font-size: 1.5rem;
 }
-.banner-desc{
-  font-size: .8rem;
+.banner-desc {
+  font-size: 0.8rem;
 }
 /* responsive for mobile devices */
-@media screen and (max-width:576px) {
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    padding: 5px 10px 0px 0;
+  }
+  nav ul li {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 960px) {
   header{
-    padding: 20px
+    padding: 50px;
   }
   .nav{
     flex-direction: column;
   }
-  nav > ul{
+  nav > ul {
     padding: 5px;
-  }
-  nav ul li{
-    font-size: 12px;
   }
 }
